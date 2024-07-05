@@ -24,13 +24,10 @@ struct ContentView: View {
                 ForEach(animals) { animal in
                     NavigationLink(destination: AnimalDetailView(animal: animal)) {
                         AnimalListItemView(animal: animal)
-
-                    }
-
-                }
+                    } //: LINK
+                } //: LOOP
             } //: LIST
             .navigationTitle("Africa")
-            
         }//: NAVIGATION
     }
 }
