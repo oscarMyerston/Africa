@@ -11,9 +11,10 @@ struct Video: Codable, Identifiable {
     let id: String
     let name: String
     let headline: String
-
-    // Computer property
+    
+    // Computed Property
     var thumbnail: String {
         "video-\(id)"
     }
 }
+
